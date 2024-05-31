@@ -1,0 +1,103 @@
+{
+  "format": "xls",
+  "accountId": 71,
+  "separator": null,
+  "requestFields": {
+    "requestId": {
+      "position": 0,
+      "required": false,
+      "length": 11
+    },
+    "recipientFullname": {
+      "position": 2,
+      "required": false,
+      "length": 11
+    },
+    "phone": {
+      "position": 3,
+      "required": false,
+      "length": 11
+    },
+    "email": {
+      "position": 4,
+      "required": false,
+      "length": 11
+    },
+    "docType": {
+      "position": 5,
+      "required": false,
+      "length": 11
+    },
+    "docNumber": {
+      "position": 8,
+      "required": false,
+      "length": 11
+    },
+    "enabledPlace": {
+      "position": 9,
+      "required": false,
+      "length": 11
+    },
+    "cpa": {
+      "position": 10,
+      "required": false
+    },
+    "province": {
+      "position": 11,
+      "required": false,
+      "length": 11
+    },
+    "locality": {
+      "position": 12,
+      "required": false,
+      "length": 11
+    },
+    "homeDelivery": {
+      "position": 13,
+      "required": false
+    },
+    "addressStreet": {
+      "position": 14,
+      "required": false,
+      "length": 11
+    },
+    "addressNumber": {
+      "position": 15,
+      "required": false,
+      "length": 11
+    },
+    "addressBuilding": {
+      "position": 16,
+      "required": false,
+      "length": 11
+    },
+    "addressFloor": {
+      "position": 17,
+      "required": false,
+      "length": 11
+    },
+    "addressApartment": {
+      "position": 18,
+      "required": false,
+      "length": 11
+    },
+    "addressCpa": {
+      "position": 19,
+      "required": false,
+      "length": 11
+    },
+    "qtyPieces": {
+      "position": 20,
+      "required": false
+    },
+    "totalWeight": {
+      "position": 22,
+      "required": false
+    },
+    "observations": {
+      "position": 21,
+      "required": false,
+      "length": 11
+    }
+  }
+}

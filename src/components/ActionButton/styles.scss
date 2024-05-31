@@ -1,0 +1,60 @@
+@import "../../styles/colors.scss";
+
+.action-button {
+  font-family: "Gotham Bold", sans-serif;
+  background-color: $first_color !important;
+  border-color: $first_color !important;
+  text-transform: uppercase;
+  &:focus,
+  &:active {
+    border: 2px solid $first_color !important;
+    box-shadow: none !important;
+  }
+  &:hover {
+    box-shadow: 0 0 0 5px #e4d9d9;
+  }
+}
+.action-button:active {
+  background-color: #fff !important;
+  color: $first_color !important;
+  //border: 2px solid $first_color;
+}
+
+.secondary-action-button {
+  &:hover {
+    box-shadow: 0 0 0 5px #e4d9d9;
+  }
+  font-family: "Gotham Bold", sans-serif;
+  text-transform: uppercase;
+  background-color: #fff !important;
+  color: $first_color !important;
+  border: 2px solid $first_color !important;
+  &:focus,
+  &:active {
+    background-color: #fff !important;
+    border-color: $first_color !important;
+  }
+  &:active {
+    background-color: #fff !important;
+    color: #fff;
+  }
+}
+
+.error-button {
+  font-family: "Gotham Bold", sans-serif;
+  background-color: #A62020 !important;
+  border-color: #A62020 !important;
+  text-transform: uppercase;
+  &:focus,
+  &:active {
+    border: 2px solid #A62020 !important;
+    box-shadow: none !important;
+  }
+  &:hover {
+    box-shadow: 0 0 0 5px #e4d9d9;
+  }
+}
+.action-button:active {
+  background-color: #fff !important;
+  color: #A62020 !important;
+}

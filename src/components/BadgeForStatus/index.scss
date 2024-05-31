@@ -1,0 +1,32 @@
+@import "../../styles/colors.scss";
+.badge-pendiente {
+  display: block !important;
+  background-color: $first_color !important;
+  color: $third_color;
+  border-style: solid;
+  border-color: chocolate;
+}
+
+.badge-despachado {
+  display: block !important;
+  background-color: #4d8dfa !important;
+  color: $third_color;
+  border-style: solid;
+  border-color: navy;
+}
+
+.badge-en-tramite {
+  display: block !important;
+  background-color: gold !important;
+  color: $third_color;
+  border-style: solid;
+  border-color: darkgoldenrod;
+}
+
+.badge-entregado {
+  display: block !important;
+  background-color: darkgreen !important;
+  color: $third_color;
+  border-style: solid;
+  border-color: green;
+}

@@ -1,0 +1,41 @@
+@import "../../styles/colors.scss";
+
+.user-modification-screen {
+  .eco-company-form {
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  a {
+    color: black;
+  }
+
+  button {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  //min-height: 91.5vh;
+  min-height: calc(100vh - 4rem);
+  height: 100%;
+  background-color: #f9e7d5;
+}
+
+.dropdown-toggle::after{
+  display: none !important;
+}
+
+.alignCheckbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-modification-screen button{
+  width: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}

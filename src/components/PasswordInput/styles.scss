@@ -1,0 +1,42 @@
+.passwordInput {
+  .form-label {
+    font-weight: bold;
+  }
+  .text-muted {
+    text-align: center;
+  }
+  .textInput {
+    border-style: solid;
+    border-right-color: transparent;
+    border-top-color: #d9d4d4;
+    border-bottom-color: #d9d4d4;
+    border-radius: .4rem 0 0 .4rem !important;
+    padding: 0.5rem;
+    display: inline-block !important;
+    width: calc(100% - 100px);
+  }
+
+
+  .eye-container {
+    background-color: #d9d4d4;
+    display: inline;
+    border: 1px;
+    border-style: solid;
+    border-right-color: #d9d4d4;
+    border-top-color: #d9d4d4;
+    border-bottom-color: #d9d4d4;
+    border-left-color: transparent;
+    border-radius: 0 0.4rem 0.4rem 0;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    .eyeShow {
+      //float: right;
+      margin-left: 0.4rem;
+      margin-right: 0.4rem;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.2rem;
+      position: relative;
+      top: 2px;
+    }
+  }
+}

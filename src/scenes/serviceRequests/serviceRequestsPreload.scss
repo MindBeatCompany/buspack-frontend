@@ -1,0 +1,28 @@
+.services-preload {
+  min-width: 100%;
+  min-height: calc(100vh - 4rem);
+  height: 100%;
+  background-color: #F9E7D5;
+
+  .text-container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .action-button{
+    font-size: 10px !important;
+  }
+  .secondary-action-button{
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .action-button{
+    font-size: 10px !important;
+  }
+  .secondary-action-button{
+    font-size: 10px !important;
+  }
+}

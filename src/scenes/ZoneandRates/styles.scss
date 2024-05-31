@@ -1,0 +1,35 @@
+.action-button{
+    height: fit-content;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+.text-input .textInput{
+    width: 90%;
+}
+.displaytable{
+    display: none;
+}
+.form-label{
+    text-transform: uppercase;
+}
+.table th, .table td {
+    text-transform: uppercase;
+    color: #212529;
+
+}
+.table th {
+    font-family: "Gotham Light", sans-serif;
+ }
+
+.table td {
+    font-family: "Gotham Medium", sans-serif;
+}
+
+
+.clonedrop{
+    font-family: "Gotham Bold", sans-serif;
+    background-color: #F28E2A !important;
+    border-color: #F28E2A !important;
+    text-transform: uppercase;
+}

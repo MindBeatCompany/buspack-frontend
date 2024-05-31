@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6063e215.chunk.css",
+    "main.js": "/static/js/main.4530cc3f.chunk.js",
+    "main.js.map": "/static/js/main.4530cc3f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b7f7deb4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b7f7deb4.js.map",
+    "static/css/2.616c75f1.chunk.css": "/static/css/2.616c75f1.chunk.css",
+    "static/js/2.0cc2ea8c.chunk.js": "/static/js/2.0cc2ea8c.chunk.js",
+    "static/js/2.0cc2ea8c.chunk.js.map": "/static/js/2.0cc2ea8c.chunk.js.map",
+    "static/js/3.92ba42fa.chunk.js": "/static/js/3.92ba42fa.chunk.js",
+    "static/js/3.92ba42fa.chunk.js.map": "/static/js/3.92ba42fa.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.616c75f1.chunk.css.map": "/static/css/2.616c75f1.chunk.css.map",
+    "static/css/main.6063e215.chunk.css.map": "/static/css/main.6063e215.chunk.css.map",
+    "static/js/2.0cc2ea8c.chunk.js.LICENSE.txt": "/static/js/2.0cc2ea8c.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/GothamMedium.0a910c0b.ttf",
+    "static/media/styles.scss": "/static/media/buspack-login1.612c3710.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7f7deb4.js",
+    "static/css/2.616c75f1.chunk.css",
+    "static/js/2.0cc2ea8c.chunk.js",
+    "static/css/main.6063e215.chunk.css",
+    "static/js/main.4530cc3f.chunk.js"
+  ]
+}

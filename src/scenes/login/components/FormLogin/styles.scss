@@ -1,0 +1,32 @@
+@import "../../../../styles/colors.scss";
+
+form {
+  ::placeholder,
+  select {
+    color: rgb(151, 150, 150) !important;
+  }
+
+  .checkLabel {
+    font-weight: bold !important;
+  }
+  label {
+    text-transform: uppercase;
+  }
+}
+.formikError {
+  color: rgb(221, 13, 13);
+  font-size: 1.2rem;
+  margin: -1rem 0 1rem 0.5rem;
+}
+
+.recovery-pass-link {
+  display: block;
+  color: $first_color;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.error-msg-login {
+  color: $first_color;
+  font-family: "Gotham Medium", sans-serif;
+}

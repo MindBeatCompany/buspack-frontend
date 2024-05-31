@@ -1,0 +1,12 @@
+@import "../../styles/colors.scss";
+
+.readyBtn {
+  font-family: "Gotham Bold", sans-serif;
+  text-transform: uppercase;
+  background-color: #fff !important;
+  color: $first_color !important;
+  border: 2px solid $first_color !important;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}

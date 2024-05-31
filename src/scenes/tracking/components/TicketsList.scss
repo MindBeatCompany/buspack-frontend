@@ -1,0 +1,15 @@
+@import "../../../styles/colors.scss";
+
+.tk-list-tracking {
+  .badge-tk {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    font-weight: bold;
+  }
+  .badge-status {
+    color: #fff;
+    background-color: rgba(255, 166, 0, 0.7);
+    border-color: $first_color;
+  }
+}

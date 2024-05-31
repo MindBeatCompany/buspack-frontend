@@ -1,0 +1,23 @@
+.form-check{
+  width: 100%;  
+}
+
+.btnConfirmarRequest button{
+  width: none;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    button {
+    font-size: 10px !important;
+  }
+}
+
+.readyBtn{
+  font-size: 10px;
+}

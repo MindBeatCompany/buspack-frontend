@@ -1,0 +1,104 @@
+@import "./colors.scss";
+
+@font-face {
+  font-family: "Gotham Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/GothamMedium.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/GothamLight.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Gotham-Bold.otf") format("opentype");
+}
+
+body {
+  //background-color: #e3e3e3;
+  font-family: "Gotham Light", sans-serif;
+  font-size: 1rem;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Gotham Bold", sans-serif;
+  }
+  scroll-behavior: smooth;
+}
+
+.clickeable {
+  cursor: pointer !important;
+}
+.trclass{background-color: #F28E2A !important;}
+.trclass2{background-color: #F28E2A !important;}
+.primary-btn {
+  background-color: $first_color;
+  border: 0px;
+  border-radius: 0.4rem;
+  font-weight: 600;
+}
+
+.background-disabled {
+  background-color: $disabled_color;
+}
+
+.swal2-actions {
+  button:active {
+    box-shadow: none;
+  }
+}
+.swal2-styled.swal2-deny.swal2-styled.swal2-deny {
+  // &:hover {
+  //   box-shadow: 0 0 0 5px #e4d9d9;
+  // }
+  font-family: "Gotham Bold", sans-serif;
+  text-transform: uppercase;
+  background-color: #fff !important;
+  color: $first_color !important;
+  border: 2px solid $first_color !important;
+  &:focus,
+  &:active {
+    background-color: #fff !important;
+    border-color: $first_color !important;
+  }
+  &:active {
+    background-color: #fff !important;
+    color: #fff;
+  }
+}
+
+.swal2-styled.swal2-confirm {
+  font-family: "Gotham Bold", sans-serif;
+  background-color: $first_color !important;
+  border-color: $first_color !important;
+  text-transform: uppercase;
+  &:focus,
+  &:active {
+    border: 2px solid $first_color !important;
+    box-shadow: none !important;
+  }
+}
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}

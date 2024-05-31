@@ -1,0 +1,14 @@
+@import "../../styles/colors.scss";
+
+.user-modification-screen {
+  .eco-company-form {
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  //min-height: 91.5vh;
+  min-height: calc(100vh - 4rem);
+  height: 100%;
+  background-color: #F9E7D5;
+}

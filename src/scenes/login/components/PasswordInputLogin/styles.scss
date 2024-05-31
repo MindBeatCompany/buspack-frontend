@@ -1,0 +1,75 @@
+@import "../../../../styles/colors.scss";
+
+.password-input-login {
+  input {
+    padding: 0.5rem;
+    display: inline-block !important;
+    width: 68%;
+    &:focus-within {
+      border-right: none;
+      //border-left: none;
+      box-shadow: none;
+      border-color: #d9d4d4 !important;
+    }
+  }
+
+  .icon-container-input {
+    display: inline !important;
+    border: 1px;
+    border-style: solid;
+    border-left-color: #d9d4d4;
+    border-top-color: #d9d4d4;
+    border-bottom-color: #d9d4d4;
+    border-right-color: transparent;
+    border-radius: 0.4rem 0 0 0.4rem;
+    padding: 0.58rem 0.6rem 0.6rem 0.6rem;
+  }
+
+  .eye-container {
+    background-color: #d9d4d4;
+    display: inline;
+    border: 1px;
+    border-style: solid;
+    border-right-color: #d9d4d4;
+    border-top-color: #d9d4d4;
+    border-bottom-color: #d9d4d4;
+    border-left-color: transparent;
+    border-radius: 0 0.4rem 0.4rem 0;
+    padding: 0.55rem 0.6rem 0.6rem 0.6rem;
+    .eyeShow {
+      //float: right;
+      margin-left: 0.4rem;
+      margin-right: 0.4rem;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.2rem;
+      position: relative;
+      top: 2px;
+    }
+  }
+  .eye-container-error {
+    background-color: $first-color;
+    border-color: $first-color;
+  }
+
+  .password-login-input {
+    //border-style: solid;
+    border-right-color: #d9d4d4;
+    border-top-color: #d9d4d4;
+    border-bottom-color: #d9d4d4;
+    border-radius: 0 !important;
+    border-left-color: transparent;
+width: calc(100% - 95px)
+    //border-radius: 0 0.4rem 0.4rem 0;
+  }
+  .on-error-password {
+    background: rgba(242, 142, 42, 0.19) !important;
+    border: 1px solid $first-color !important;
+  }
+  .isWriting {
+    border: 1px solid #d9d4d4;
+    border-radius: 0.4rem;
+    width: calc(100% - 56px);
+    border-radius: 0.4rem 0 0 0.4rem !important;
+  }
+}

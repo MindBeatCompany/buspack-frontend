@@ -1,0 +1,39 @@
+@import "../../styles/colors.scss";
+
+
+  .form_group_date_picke{
+    label{
+      display: block;
+
+    }
+    .picker{
+      border-style: solid;
+      border-right-color: #d9d4d4;
+      border-top-color: #d9d4d4;
+      border-bottom-color: #d9d4d4;
+      border-radius: 0.4rem;
+      padding: 0.5rem;
+      display: inline-block !important;
+      width: 100%;
+      }
+      .react-datepicker-wrapper{
+        display: block;
+        input:focus{
+          box-shadow: none;
+          border-color: $first_color;
+        }
+      }
+      .react-datepicker__day--selected:hover{
+        background-color: #f28e2aa8
+      }
+      .react-datepicker__header {
+        background-color: #cc7925ea
+      }
+    
+      .react-datepicker__day--keyboard-selected,
+      .react-datepicker__day--selected
+      {
+        background-color: $first_color;
+      }
+  }
+  

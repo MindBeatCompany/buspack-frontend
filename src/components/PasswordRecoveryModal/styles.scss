@@ -1,0 +1,11 @@
+@import "../../styles/colors.scss";
+
+.modal-recovery-password {
+  .send-button-recovery {
+    width: 79% !important;
+  }
+  .onerrored-message {
+    color: $first_color;
+    font-family: "Gotham Bold", sans-serif;
+  }
+}

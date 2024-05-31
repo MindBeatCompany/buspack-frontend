@@ -1,0 +1,19 @@
+.login {
+
+  button {
+    margin-top: 15px;
+  }
+  .img-login-container{
+    background-image: url("../../../src/resources/images/buspack-login1.png");
+    background-color: transparent;
+    width: 720px;
+    max-height: 100%;
+    min-height: auto;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .form-container{
+    height: 85vh;
+  }
+}

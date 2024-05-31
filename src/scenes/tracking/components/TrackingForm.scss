@@ -1,0 +1,15 @@
+.tracking-form {
+  .filterButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    button {
+      font-size: 0.8rem !important;
+      //change font-size then change height to fit with inputs height 
+      height: 2.4rem !important;
+    }
+  }
+  .form-group {
+    margin: 0 !important;
+  }
+}

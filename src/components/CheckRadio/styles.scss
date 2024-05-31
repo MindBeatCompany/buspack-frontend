@@ -1,0 +1,16 @@
+.custom-checkradio {
+    padding: 0.5rem !important;
+
+input[type=radio]:checked:after {
+    background-color: rgb(247, 247, 247) ;
+    width: 17px;
+    height: 17px;
+    border: 5px solid #10578d;
+}
+.form-check-label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+ 
+cursor: pointer;
+}

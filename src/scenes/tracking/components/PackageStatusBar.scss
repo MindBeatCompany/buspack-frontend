@@ -1,0 +1,32 @@
+.package-status {
+  min-height: 55vh;
+  margin-top: 5rem !important;
+  .icon-container {
+    align-items: center;
+    p {
+      font-weight: 600;
+    }
+  }
+  .icon-status {
+    font-size: 5rem;
+  }
+  .narrow-container {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .past-status-color {
+    color: rgba(123, 172, 224, 0.581);
+  }
+  .next-status-color {
+    color: rgb(177, 171, 171);
+  }
+
+  .status-info{
+    p{
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}

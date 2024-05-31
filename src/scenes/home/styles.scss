@@ -1,0 +1,23 @@
+#home-scene{
+    background: linear-gradient(180deg, #FFFFFF 0%, #C0C0C0 100%);
+    width: calc( 100vw - 81px);
+    height: calc( 100vh - 4rem);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        margin:1.5rem;
+    }
+    .logo-bottom{
+        display: flex;
+        justify-content: flex-end;
+        svg{
+            width: 50%;
+        }
+    }
+}

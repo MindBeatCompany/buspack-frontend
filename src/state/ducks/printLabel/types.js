@@ -1,0 +1,12 @@
+const API_CALL = "printLabel/API_CALL";
+const RESET_PRINT_LABEL = "printLabel/RESET_PRINT_LABEL";
+const RESET_PRINT_LABEL_DO = "printLabel/RESET_PRINT_LABEL_DO";
+const SEND_TO_PRINT = "printLabel/SEND_TO_PRINT";
+const GET_PRINT_LABEL = "printLabel/GET_PRINT_LABEL";
+export default {
+  API_CALL,
+  SEND_TO_PRINT,
+  RESET_PRINT_LABEL,
+  RESET_PRINT_LABEL_DO,
+  GET_PRINT_LABEL,
+};

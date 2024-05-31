@@ -1,0 +1,30 @@
+@import "../../../styles/colors.scss";
+
+.editRequestForm {
+    .row {
+        align-items: flex-end !important;
+    }
+
+    .custom-input {
+
+        border-style: solid !important;
+        border-right-color: #d9d4d4 !important;
+        border-top-color: #d9d4d4 !important;
+        border-bottom-color: #d9d4d4 !important;
+        border-radius: 0.4rem !important;
+
+        &:focus {
+            box-shadow: none !important;
+            border-color: $first_color !important;
+
+
+        }
+    }
+
+    .enabled-places {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-bottom: 1rem;
+        column-gap: 5px;
+    }
+}

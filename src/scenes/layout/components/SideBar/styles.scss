@@ -1,0 +1,90 @@
+@import "../../../../styles/colors.scss";
+
+
+
+.nav{
+	position: fixed;
+	background-color: #191E25;
+	box-shadow: 0px 0px 10px #F0F0F0;
+	height: 100%;
+    top:4rem;
+    z-index:99;
+    &__expand{
+        display: flex;
+        justify-content: flex-end;
+		fill: white;
+		position: absolute;
+		top: 1rem;
+        left: 1rem;
+		cursor:pointer;
+		transition: transform 100ms ease-in-out;
+        width: 16rem;
+        svg{
+            height: 3rem;
+            width: 3rem;
+        }
+	}
+    &__list{
+
+        display: flex;
+		flex-direction: column;
+        // margin-top: 3rem;
+        padding:0;
+        &item{
+            list-style:none;
+			transition: all 200ms ease-in;
+			padding: 1rem;
+            // height: 3.5rem;
+            // margin-top: 3rem;
+			cursor:pointer;
+            margin-top: 1rem;
+            &:first-child{
+                margin-top: 5rem;
+            }
+			
+            a {
+                 display: flex;
+                // gap: 1rem;
+                // align-items: center;
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                font-style: normal;
+                &:hover{
+                    text-decoration: none;
+                    color: #F28E2A;
+                }
+              }
+              svg{	
+				fill:white;
+				width:2rem;
+                margin-right: 15px;
+			}
+            .expand-text{
+                width: 14rem;
+                height: 3rem;
+                overflow: hidden;
+                transition: all 200ms ease;
+            }
+            &:hover{
+                svg{
+                    path{
+
+                        fill:#F28E2A;
+                    }
+                }
+            }
+        }
+    }
+    &-closed &__expand{
+        align-items: center;
+        width: 2rem;
+        svg{
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+    &-closed &__listitem .expand-text{
+        width: 0;
+    }
+}

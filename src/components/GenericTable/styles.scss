@@ -1,0 +1,42 @@
+@import "../../styles/colors.scss";
+
+.generic-table {
+  svg {
+    cursor: pointer;
+  }
+  font-size: 1rem;
+
+  th:first-of-type {
+    border-radius: 5px 0px 0 5px !important;
+  }
+
+  th:last-of-type {
+    border-radius: 0 5px 5px 0 !important;
+  }
+
+  tr {
+    font-family: "Gotham Medium", sans-serif;
+  }
+
+  th {
+    padding: 0.4rem 0.75rem !important;
+    font-family: "Gotham Light", sans-serif;
+  }
+  thead tr {
+    background-color: $first_color !important;
+    text-transform: uppercase;
+    svg {
+      float: right;
+      margin-top: 10px;
+    }
+  }
+  input {
+    cursor: pointer;
+  }
+
+  tbody tr {
+    svg:active {
+      color: $first_color;
+    }
+  }
+}
