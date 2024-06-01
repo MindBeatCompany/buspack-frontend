@@ -134,18 +134,18 @@ class PrintLabel extends React.Component {
   // Original print function
   printTickets(e) {
     e.preventDefault();
-    this.sendToPrint("print-labels/pdf10x15");
+    this.sendToPrint("print-labels/pdfA4");
   }
-
+  
   // Additional print functions
   printTickets2(e) {
     e.preventDefault();
     this.sendToPrint("print-labels/pdf10x20");
   }
-
+  
   printTickets3(e) {
     e.preventDefault();
-    this.sendToPrint("print-labels/pdf10x15-alt");
+    this.sendToPrint("print-labels/pdf10x15");
   }
 
   printTickets4(e) {
