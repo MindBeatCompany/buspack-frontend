@@ -8,11 +8,12 @@ import { authActions } from "../../../../state/ducks/auth";
 import { ActionButton, AuthenticatedLink } from "../../../../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
-
 const initialValues = {
     request_id: "",
     voucher: "",
     delivery: "",
+    dateFrom: "",
+    dateTo: "",
 };
 
 const FormPieces = ({
@@ -50,14 +51,12 @@ const FormPieces = ({
                 requestId: values.request_id,
                 voucher: values.voucher,
                 delivery: values.delivery,
+                dateFrom: values.dateFrom,
+                dateTo: values.dateTo,
                 callback,
             });
         },
     });
-
-    let headers = {
-        "Access-Control-Allow-Origin": "*",
-    };
 
     return (
         <Form onSubmit={formik.handleSubmit}>
@@ -88,6 +87,26 @@ const FormPieces = ({
                         type="text"
                         name="delivery"
                         value={formik.values.delivery}
+                        onChange={formik.handleChange}
+                    />
+                </Form.Group>
+
+                <Form.Group as={Col} controlId="formGridDateFrom">
+                    <Form.Label>Fecha Desde</Form.Label>
+                    <Form.Control
+                        type="date"
+                        name="dateFrom"
+                        value={formik.values.dateFrom}
+                        onChange={formik.handleChange}
+                    />
+                </Form.Group>
+
+                <Form.Group as={Col} controlId="formGridDateTo">
+                    <Form.Label>Fecha hasta</Form.Label>
+                    <Form.Control
+                        type="date"
+                        name="dateTo"
+                        value={formik.values.dateTo}
                         onChange={formik.handleChange}
                     />
                 </Form.Group>
