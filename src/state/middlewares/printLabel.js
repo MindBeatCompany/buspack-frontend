@@ -60,12 +60,8 @@ const getPrintLabel =
 
         let url = `service-request/print-label?request-id=${requestId}&voucher=${voucher}&delivery=${delivery}`;
 
-        if (dateFrom) {
-            url += `&dateFrom=${dateFrom}`;
-        }
-        if (dateTo) {
-            url += `&dateTo=${dateTo}`;
-        }
+        url += `&dateFrom=${dateFrom || ""}`;
+        url += `&dateTo=${dateTo || ""}`;
 
         dispatch({
             type: printLabelTypes.API_CALL,
