@@ -56,18 +56,19 @@ class PrintLabel extends React.Component {
     }
 
     // Handle row selection
+    // Handle row selection
     onChange(e) {
-        const value = e.target.value;
+        const value = Number(e.target.value); // Convert value to a number
         const checked = e.target.checked;
         const { selectedRowsToPrint } = this.state;
         if (checked) {
             this.setState({
-                selectedRowsToPrint: [...selectedRowsToPrint, Number(value)],
+                selectedRowsToPrint: [...selectedRowsToPrint, value],
             });
         } else {
             this.setState({
                 selectedRowsToPrint: selectedRowsToPrint.filter(
-                    (r) => r !== value
+                    (r) => r !== value // Ensure comparison is between numbers
                 ),
             });
         }
