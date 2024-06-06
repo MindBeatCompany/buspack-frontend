@@ -115,7 +115,7 @@ const FormPieces = ({
             {validationError && (
                 <div className="alert alert-danger">
                     <FontAwesomeIcon icon={faExclamationCircle} />{" "}
-                    {t("formPieces.validationError")}
+                    {validationError}
                 </div>
             )}
 

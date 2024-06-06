@@ -56,18 +56,19 @@ class PrintLabel extends React.Component {
     }
 
     // Handle row selection
+    // Handle row selection
     onChange(e) {
-        const value = e.target.value;
+        const value = Number(e.target.value); // Convert value to a number
         const checked = e.target.checked;
         const { selectedRowsToPrint } = this.state;
         if (checked) {
             this.setState({
-                selectedRowsToPrint: [...selectedRowsToPrint, Number(value)],
+                selectedRowsToPrint: [...selectedRowsToPrint, value],
             });
         } else {
             this.setState({
                 selectedRowsToPrint: selectedRowsToPrint.filter(
-                    (r) => r !== value
+                    (r) => r !== value // Ensure comparison is between numbers
                 ),
             });
         }
@@ -167,12 +168,12 @@ class PrintLabel extends React.Component {
         const arrayOfData = selectedRowsToPrint
             .map((num) => this.state.bodyRows[num])
             .map((data) => {
-                // console.log("DATA", data);
+                 console.log("DATA", data);
                 return {
                     ...mapDataOut(data, userData.codeECO),
                     companyName: userData.account.companyName,
                     clientName: userData.userName,
-                    ed: data[9] === "Entrega en domicilio" ? "ED" : "",
+                    ed: data[7] === "Entrega en domicilio" ? "ED" : "",
                     voucher: data[8],
                     phone: data[10],
                     observations: data[11],
