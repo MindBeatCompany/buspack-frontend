@@ -168,12 +168,12 @@ class PrintLabel extends React.Component {
         const arrayOfData = selectedRowsToPrint
             .map((num) => this.state.bodyRows[num])
             .map((data) => {
-                // console.log("DATA", data);
+                 console.log("DATA", data);
                 return {
                     ...mapDataOut(data, userData.codeECO),
                     companyName: userData.account.companyName,
                     clientName: userData.userName,
-                    ed: data[9] === "Entrega en domicilio" ? "ED" : "",
+                    ed: data[7] === "Entrega en domicilio" ? "ED" : "",
                     voucher: data[8],
                     phone: data[10],
                     observations: data[11],
