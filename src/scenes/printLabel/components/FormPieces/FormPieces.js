@@ -112,12 +112,12 @@ const FormPieces = ({
                 </Form.Group>
             </Form.Row>
 
-            {validationError && (
+            {/* {validationError && (
                 <div className="alert alert-danger">
                     <FontAwesomeIcon icon={faExclamationCircle} />{" "}
                     {validationError}
                 </div>
-            )}
+            )} */}
 
             <div className="d-flex align-items-center">
                 <ActionButton type="submit" className="mr-2" disabled={loading}>

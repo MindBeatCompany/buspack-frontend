@@ -113,6 +113,7 @@ class PrintLabel extends React.Component {
                 voucher,
                 shipping,
                 pieceId,
+                origin,
             } = row;
             let newObj = {
                 pieces: pieceId,
@@ -127,6 +128,7 @@ class PrintLabel extends React.Component {
                 status: <BadgeForStatus state={textMock[row.status]} />,
                 phone,
                 observations,
+                origin,
             };
             bodyRowsTransformed.push([...Object.values(newObj)]);
         });
@@ -168,7 +170,7 @@ class PrintLabel extends React.Component {
         const arrayOfData = selectedRowsToPrint
             .map((num) => this.state.bodyRows[num])
             .map((data) => {
-                 console.log("DATA", data);
+                //  console.log("DATA", data);
                 return {
                     ...mapDataOut(data, userData.codeECO),
                     companyName: userData.account.companyName,

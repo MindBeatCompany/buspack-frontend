@@ -57,7 +57,6 @@ const GenericTable = ({
                                 </td>
                             )}
                             {rows.slice(0, -2).map((col, idx) => {
-                                console.log("COLLLLL", col);
                                 if (showState) {
                                     return (
                                         <td
