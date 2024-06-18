@@ -1,3 +1,5 @@
+// PrintLabel Component
+
 import React from "react";
 import { withTranslation } from "react-i18next";
 import { connect } from "react-redux";
@@ -53,12 +55,17 @@ class PrintLabel extends React.Component {
         this.printTickets2 = this.printTickets2.bind(this);
         this.printTickets3 = this.printTickets3.bind(this);
         this.printTickets4 = this.printTickets4.bind(this);
+        this.clearSelectedRows = this.clearSelectedRows.bind(this);
+    }
+
+    // Clear selected rows
+    clearSelectedRows() {
+        this.setState({ selectedRowsToPrint: [] });
     }
 
     // Handle row selection
-    // Handle row selection
     onChange(e) {
-        const value = Number(e.target.value); // Convert value to a number
+        const value = Number(e.target.value);
         const checked = e.target.checked;
         const { selectedRowsToPrint } = this.state;
         if (checked) {
@@ -68,7 +75,7 @@ class PrintLabel extends React.Component {
         } else {
             this.setState({
                 selectedRowsToPrint: selectedRowsToPrint.filter(
-                    (r) => r !== value // Ensure comparison is between numbers
+                    (r) => r !== value
                 ),
             });
         }
@@ -170,7 +177,6 @@ class PrintLabel extends React.Component {
         const arrayOfData = selectedRowsToPrint
             .map((num) => this.state.bodyRows[num])
             .map((data) => {
-                //  console.log("DATA", data);
                 return {
                     ...mapDataOut(data, userData.codeECO),
                     companyName: userData.account.companyName,
@@ -215,9 +221,10 @@ class PrintLabel extends React.Component {
                 <Row>
                     <Col xs={12}>
                         <FormPieces
-                            setShowTable={() =>
-                                this.setState({ showTable: true })
-                            }
+                            setShowTable={() => {
+                                this.setState({ showTable: true });
+                                this.clearSelectedRows();
+                            }}
                             showTable={this.state.showTable}
                             printTickets={this.printTickets}
                             printTickets2={this.printTickets2}
@@ -263,3 +270,4 @@ export default compose(
     connect(mapDispatchToProps, { ...authActions, ...printLabelActions }),
     withTranslation()
 )(PrintLabel);
+
