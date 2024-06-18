@@ -179,6 +179,7 @@ class PrintLabel extends React.Component {
                     voucher: data[8],
                     phone: data[10],
                     observations: data[11],
+                    origin: data[12],
                 };
             });
         sendToPrint({
