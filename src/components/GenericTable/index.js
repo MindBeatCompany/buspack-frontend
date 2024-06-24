@@ -14,6 +14,8 @@ const GenericTable = ({
     selectedRowsToPrint,
     t,
 }) => {
+
+    console.log("Theadssss", bodyRows);
     return (
         <>
             <Table responsive borderless hover className="generic-table">

@@ -199,6 +199,13 @@ class PrintLabel extends React.Component {
             },
         });
     }
+    filterOutLastThree = (array) => {
+        return array.slice(0, -3);
+    };
+
+    filterOutLastThreeBodyRows = (array) => {
+        return array.map(row => row.slice(0, -3));
+    };
 
     render() {
         const {
@@ -241,8 +248,8 @@ class PrintLabel extends React.Component {
                         {this.state.showTable && (
                             <GenericTable
                                 showState={false}
-                                theads={theaders}
-                                bodyRows={bodyRows}
+                                theads={this.filterOutLastThree(theaders)}
+                                bodyRows={this.filterOutLastThreeBodyRows(bodyRows)}
                                 selectable={true}
                                 selectedRowsToPrint={
                                     this.state.selectedRowsToPrint
