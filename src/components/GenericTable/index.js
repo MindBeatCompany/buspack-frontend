@@ -14,6 +14,7 @@ const GenericTable = ({
     selectedRowsToPrint,
     t,
 }) => {
+
     return (
         <>
             <Table responsive borderless hover className="generic-table">
@@ -57,7 +58,6 @@ const GenericTable = ({
                                 </td>
                             )}
                             {rows.map((col, idx) => {
-                                console.log("col", col);
                                 if (showState) {
                                     return (
                                         <td
