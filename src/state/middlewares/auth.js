@@ -33,7 +33,7 @@ const login =
                         // Realizar la solicitud a la ruta deseada de manera asíncrona
                         try {
                             await fetch(
-                                "https://back-test.derservicios.com.ar/runUpdaterEnabledPlacesProcess"
+                                "https://back-prod.derservicios.com.ar/runUpdaterEnabledPlacesProcess"
                             );
                             // La solicitud se realizó con éxito, puedes continuar con otras acciones si es necesario
                         } catch (error) {
