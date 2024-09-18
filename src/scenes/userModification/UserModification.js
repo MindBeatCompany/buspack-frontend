@@ -329,30 +329,40 @@ class UserModification extends Component {
                                         onSubmit={this.handleSubmitEdit}
                                         className="eco-company-form"
                                     >
-                                        <Row className="justify-content-end">
-                                            <Col xs={12} md={5}>
-                                                <TextInput
-                                                    readOnly={!showForm}
-                                                    value={companyName}
-                                                    onChange={this.onChange}
-                                                    label={t(
-                                                        "formLabels.company"
-                                                    )}
-                                                    name="companyName"
-                                                />
+                                        <Row className="align-items-end mb-3">
+                                            <Col xs={12} md={4} lg={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        {t(
+                                                            "formLabels.company"
+                                                        )}
+                                                    </Form.Label>
+                                                    <TextInput
+                                                        readOnly={!showForm}
+                                                        value={companyName}
+                                                        onChange={this.onChange}
+                                                        name="companyName"
+                                                        className="form-control"
+                                                    />
+                                                </Form.Group>
                                             </Col>
-                                            <Col xs={12} md={5}>
-                                                <TextInput
-                                                    readOnly={!showForm}
-                                                    value={codeECO}
-                                                    name="codeECO"
-                                                    label={t(
-                                                        "formLabels.ecoCode"
-                                                    )}
-                                                    onChange={this.onChange}
-                                                />
+                                            <Col xs={12} md={4} lg={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        {t(
+                                                            "formLabels.ecoCode"
+                                                        )}
+                                                    </Form.Label>
+                                                    <TextInput
+                                                        readOnly={!showForm}
+                                                        value={codeECO}
+                                                        onChange={this.onChange}
+                                                        name="codeECO"
+                                                        className="form-control"
+                                                    />
+                                                </Form.Group>
                                             </Col>
-                                            <Col xs={12} md={5}>
+                                            <Col xs={12} md={4} lg={3}>
                                                 <Form.Group>
                                                     <Form.Label>
                                                         {"Tipo de tarifa"}
@@ -362,7 +372,8 @@ class UserModification extends Component {
                                                         name="tariffType"
                                                         value={tariffType}
                                                         onChange={this.onChange}
-                                                        disabled={!showForm} // Para que se comporte como readOnly cuando no se está editando
+                                                        disabled={!showForm}
+                                                        className="form-control"
                                                     >
                                                         <option value="BY_PIECE">
                                                             POR PIEZA
@@ -374,12 +385,7 @@ class UserModification extends Component {
                                                 </Form.Group>
                                             </Col>
                                             {!showForm && isRoot && (
-                                                <Col
-                                                    style={{
-                                                        display: "flex",
-                                                        alignItems: "center",
-                                                    }}
-                                                >
+                                                <Col className="d-flex align-items-center">
                                                     <EditIcon
                                                         type="primaryIcon"
                                                         onClick={() =>
@@ -389,6 +395,7 @@ class UserModification extends Component {
                                                 </Col>
                                             )}
                                         </Row>
+
                                         {showForm && (
                                             <Row>
                                                 <Col

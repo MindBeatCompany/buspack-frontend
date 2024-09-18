@@ -60,7 +60,7 @@ const AccountsTable = ({
                             )}
                         </th>
 
-                        <th>Tarifario</th>
+                        <th>Tarifa</th>
 
                         <th onClick={() => applySort("accountType")}>
                             Tipo{" "}
@@ -80,7 +80,7 @@ const AccountsTable = ({
                             <tr key={idx}>
                                 <td>{acc.codeECO}</td>
                                 <td>{acc.companyName}</td>
-                                <td>{acc.tariffType}</td>
+                                <td>{acc.tariffType == "BY_PIECE" ? "POR PIEZA" : "POR ENVIO"}</td>
                                 <td>{acc.accountType} </td>
                                 <td className="text-left">
                                     <CustomCheckbox
