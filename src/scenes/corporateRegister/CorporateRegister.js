@@ -193,6 +193,7 @@ class CorporateRegister extends Component {
         : company.companyName,
       accountType: "Cuenta Corporativa",
       codeEco: accounts[0].ecoCode ? accounts[0].ecoCode : company.codeECO,
+      tariffType: "BY_PIECE",
       users: allUsers,
     };
 
