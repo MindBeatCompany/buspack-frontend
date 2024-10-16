@@ -403,23 +403,24 @@ class UserModification extends Component {
                                                         display: "flex",
                                                         justifyContent:
                                                             "flex-end",
+                                                        alignItems: "center",
                                                     }}
                                                 >
                                                     <ActionButton type="submit">
                                                         Guardar
                                                     </ActionButton>
-                                                    <div className="d-inline-block ml-3">
-                                                        <ActionButton
-                                                            type="button"
-                                                            onClick={
-                                                                this
-                                                                    .handleCancelEdit
-                                                            }
-                                                            secondary
-                                                        >
-                                                            Cancelar
-                                                        </ActionButton>
-                                                    </div>
+
+                                                    <ActionButton
+                                                        type="button"
+                                                        onClick={
+                                                            this
+                                                                .handleCancelEdit
+                                                        }
+                                                        secondary
+                                                    >
+                                                        Cancelar
+                                                    </ActionButton>
+                                                    {/* </div> */}
                                                 </Col>
                                             </Row>
                                         )}
