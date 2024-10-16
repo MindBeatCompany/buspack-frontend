@@ -30,9 +30,9 @@ export const HEADERS = ({ token, expToken, contentType = null }) => {
 };
 
 export const api = axios.create({
-    baseURL: API_URL,
-    // baseURL: "https://api-test.derservicios.com.ar//v1/api",
-    // baseURL: "https://qa.derservicios.com.ar/v1/api/v1/api",
+  baseURL: API_URL,
+  // baseURL: "https://api-test.derservicios.com.ar//v1/api",
+  // baseURL: "https://qa.derservicios.com.ar/v1/api/v1/api",
 
     timeout: 120000,
     headers: {
